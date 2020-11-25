@@ -18,7 +18,6 @@ byte y = 5;
 byte startSnakeLenght = 4;
 byte snakeLenght = startSnakeLenght;
 
-//Apple variables
 byte appleX = 40;
 byte appleY = 40;
 
