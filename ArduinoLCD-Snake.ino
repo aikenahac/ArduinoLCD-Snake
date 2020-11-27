@@ -137,6 +137,10 @@ void game() {
     snakeLenght++;
   }
   Serial.println(snakeLenght);
+
+  if (analogRead(A2) == 0){
+    gameState = Logo;  
+  }
   
   handleInput();
   movement();
