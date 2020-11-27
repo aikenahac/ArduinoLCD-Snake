@@ -7,8 +7,6 @@ enum GameState{Logo, Game, GameOver} gameState;
 #define dc   8
 #define rst  9
 
-const int gameReset = 2;
-
 TFT tft = TFT(cs, dc, rst);
 
 byte mapGrid[800];
@@ -24,9 +22,6 @@ byte appleY = 40;
 enum SnakeDir{Up, Down, Right, Left} snakeDir = Right;
 
 void setup() {
-
-  pinMode(gameReset, INPUT_PULLUP);
-  
   gameState = 0;
   
   tft.begin();
